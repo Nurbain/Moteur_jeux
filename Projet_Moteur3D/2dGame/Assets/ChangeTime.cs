@@ -4,8 +4,11 @@ using System.Collections;
 public class ChangeTime : MonoBehaviour {
 	public GameObject _Past;
 	public GameObject _Futur;
-	bool isPast=true;
 	public GameObject _Filter;
+	int i=0;
+	bool isPast=true;
+	bool Verif=true;
+
 	// Use this for initialization
 	void Start () {
 		_Past.SetActive (true);
@@ -18,20 +21,21 @@ public class ChangeTime : MonoBehaviour {
 	
 	}
 		
-	private void OnTriggerEnter2D(Collider2D other)
+	public void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.tag == "Player"){
-			if (isPast) {
-				_Past.SetActive (false);
-				_Futur.SetActive (true);
-				_Filter.SetActive (false);
-				isPast = false;
-			} else {
-				_Past.SetActive (false);
-				_Futur.SetActive (true);
-				_Filter.SetActive (true);
-				isPast = true;
-			}
+		if (other.tag == "Player" && Verif){
+				_Past.SetActive (!isPast);
+				_Futur.SetActive (isPast);
+				_Filter.SetActive (!isPast);
+				isPast = !isPast;
+				print ("hello");
+				Verif = false;
+		}
+	}
+	public void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.tag == "Player" && !Verif){
+			Verif = true;
 		}
 	}
 }
