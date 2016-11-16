@@ -7,6 +7,7 @@ public class Menufct : MonoBehaviour {
 
 	public GameObject coption;
 	public GameObject cmenu;
+	public GameObject ccredit;
 	// Use this for initialization
 	void Start () {
 	
@@ -26,7 +27,8 @@ public class Menufct : MonoBehaviour {
 
 	public void Credit()
 	{
-	
+		ccredit.SetActive(true);
+		cmenu.SetActive(false);
 	}
 
 	public void start()
@@ -41,6 +43,7 @@ public class Menufct : MonoBehaviour {
 
 	public void retour()
 	{
+		ccredit.SetActive(false);
 		coption.SetActive(false);
 		cmenu.SetActive(true);
 	}
