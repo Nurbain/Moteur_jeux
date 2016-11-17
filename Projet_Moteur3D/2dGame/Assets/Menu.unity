@@ -2083,7 +2083,7 @@ GameObject:
   - 4: {fileID: 570731275}
   - 82: {fileID: 570731274}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Fond_sonore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
