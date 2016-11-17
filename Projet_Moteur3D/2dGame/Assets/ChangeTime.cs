@@ -6,7 +6,7 @@ public class ChangeTime : MonoBehaviour {
 	public GameObject _Futur;
 	public GameObject _Filter;
 	int i=0;
-	bool isPast=true;
+	static bool isPast;
 	bool Verif=true;
 
 	// Use this for initialization
@@ -14,6 +14,7 @@ public class ChangeTime : MonoBehaviour {
 		_Past.SetActive (true);
 		_Futur.SetActive (false);
 		_Filter.SetActive (true);
+		isPast = true;
 	}
 	
 	// Update is called once per frame
@@ -32,9 +33,10 @@ public class ChangeTime : MonoBehaviour {
 				Verif = false;
 		}
 	}
-	public void OnTriggerExit2D(Collider2D other)
+	public IEnumerator OnTriggerExit2D(Collider2D other)
 	{
 		if (other.tag == "Player" && !Verif){
+			yield return new WaitForSeconds (1);
 			Verif = true;
 		}
 	}
