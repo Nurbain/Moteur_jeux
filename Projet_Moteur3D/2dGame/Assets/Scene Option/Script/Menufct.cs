@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Menufct : MonoBehaviour {
 
-	public GameObject coption;
 	public GameObject cmenu;
 	public GameObject ccredit;
+	public GameObject coption;
 	// Use this for initialization
 	void Start () {
 	
@@ -44,7 +44,6 @@ public class Menufct : MonoBehaviour {
 	public void retour()
 	{
 		ccredit.SetActive(false);
-		coption.SetActive(false);
 		cmenu.SetActive(true);
 	}
 }
