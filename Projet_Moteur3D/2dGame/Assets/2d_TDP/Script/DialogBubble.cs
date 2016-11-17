@@ -13,6 +13,8 @@ public class DialogBubble : MonoBehaviour {
 	public bool IsTalking = false;
 	public List<PixelBubble> vBubble = new List<PixelBubble>();
 	private PixelBubble vActiveBubble = null;
+	bool wait=true;
+	bool canTalk=false;
 
 	//show the right bubble on the current character
 	void ShowBubble(DialogBubble vcharacter)
@@ -23,14 +25,17 @@ public class DialogBubble : MonoBehaviour {
 		if (vActiveBubble != null) {
 			if (vActiveBubble.vClickToCloseBubble) {
 				//get the function to close bubble
+				print("close");
 				Appear vAppear = vcharacter.vCurrentBubble.GetComponent<Appear> ();
 				vAppear.valpha = 0f;
 				vAppear.vTimer = 0f; //instantly
 				vAppear.vchoice = false; //close bubble
 				
 				//check if last bubble
-				if (vActiveBubble == vcharacter.vBubble.Last ())
+				if (vActiveBubble == vcharacter.vBubble.Last ()) {
 					vcharacter.IsTalking = false;
+					vActiveBubble = null;
+				}
 			}
 		}
 		
@@ -72,13 +77,13 @@ public class DialogBubble : MonoBehaviour {
 				if (vBubble.vMessageForm == BubbleType.Rectangle)
 				{
 					//create bubble
-					vBubbleObject = Instantiate(Resources.Load<GameObject> ("Customs/BubbleRectangle"));
+					vBubbleObject = Instantiate(Resources.Load<GameObject> ("Customs/BubbleRectangle_modif"));
 					vBubbleObject.transform.position = vcharacter.transform.position + new Vector3(1.35f, 1.9f, 0f); //move a little bit the teleport particle effect
 				}
 				else 
 				{
 					//create bubble
-					vBubbleObject = Instantiate(Resources.Load<GameObject> ("Customs/BubbleRound"));
+					vBubbleObject = Instantiate(Resources.Load<GameObject> ("Customs/BubbleRound_modif"));
 					vBubbleObject.transform.position = vcharacter.transform.position + new Vector3(0.15f, 1.75f, 0f); //move a little bit the teleport particle effect
 				}
 
@@ -117,15 +122,15 @@ public class DialogBubble : MonoBehaviour {
 						vTextMesh.text = vTrueMessage;
 						child.GetComponent<MeshRenderer>().sortingOrder = 1550;
 						
-						Transform vMouseIcon = child.FindChild("MouseIcon");
+						/*Transform vMouseIcon = child.FindChild("MouseIcon");
 						if (vMouseIcon != null && !vBubble.vClickToCloseBubble)
-							vMouseIcon.gameObject.SetActive(false);
+							vMouseIcon.gameObject.SetActive(false);*/
 					}
 					
 					//disable the mouse icon because it will close by itself
-					if (child.name == "MouseIcon" && !vBubble.vClickToCloseBubble)
+					/*if (child.name == "MouseIcon" && !vBubble.vClickToCloseBubble)
 						child.gameObject.SetActive(false);
-					else
+					else*/
 						vActiveBubble =  vBubble; //keep the active bubble and wait for the Left Click
 				}
 				
@@ -139,26 +144,29 @@ public class DialogBubble : MonoBehaviour {
 		}
 	}	
 
-	void Update () 
+	void Update ()
 	{
-		//check if we have the mouse over the character
-		ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-	
-		//make sure we left click and is on a NPC
-		if (Physics.Raycast (ray, out hit) && Input.GetMouseButtonDown (0)) {
-			//only return NPC
-			if (hit.transform == this.transform) {
-				//check the bubble on the character and make it appear!
+		if (canTalk) {
+			if (Input.GetButtonUp ("Action")) {
+				print ("Speak");
 				if (vBubble.Count > 0) {
-					ShowBubble (hit.transform.GetComponent<DialogBubble> ());
+					ShowBubble (this.transform.GetComponent<DialogBubble> ());
 				}
 			}
 		}
+	}
 
-		//can't have a current character 
-		if (!IsTalking)
-		{			
-			vActiveBubble = null;
+	//Quentin WENDLING
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == "Player" && wait) {
+			canTalk = true;
+			wait = false;
+		}
+	}
+	void OnTriggerExit2D(Collider2D other){
+		if (other.tag == "Player" && !wait) {
+			canTalk = false;
+			wait = true;
 		}
 	}
 }
