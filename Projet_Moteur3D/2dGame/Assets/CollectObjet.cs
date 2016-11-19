@@ -4,10 +4,12 @@ using System.Collections;
 public class CollectObjet : MonoBehaviour {
 
 	public GameObject Objetscene;
-	public GameObject Objetinv;
+	public GameObject ObjetinvF;
+	public GameObject ObjetinvP;
 	// Use this for initialization
 	void Start () {
-		Objetinv.SetActive(false);
+		ObjetinvF.SetActive(false);
+		ObjetinvP.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -19,7 +21,8 @@ public class CollectObjet : MonoBehaviour {
 	{
 		if (other.tag == "Player") {
 			Objetscene.SetActive (false);
-			Objetinv.SetActive (true);
+			ObjetinvF.SetActive (true);
+			ObjetinvP.SetActive (true);
 		}
 	}
 }
