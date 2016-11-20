@@ -5,8 +5,7 @@ public class ChangeTime : MonoBehaviour {
 	public GameObject _Past;
 	public GameObject _Futur;
 	public GameObject _Filter;
-	int i=0;
-	static bool isPast=true;
+	public static bool isPast;
 	bool Verif=true;
 
 	// Use this for initialization

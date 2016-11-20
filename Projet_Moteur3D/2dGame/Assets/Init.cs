@@ -11,6 +11,7 @@ public class Init : MonoBehaviour {
 		_Past.SetActive (true);
 		_Futur.SetActive (false);
 		_Filter.SetActive (true);
+		ChangeTime.isPast = true;
 	}
 
 	// Update is called once per frame
