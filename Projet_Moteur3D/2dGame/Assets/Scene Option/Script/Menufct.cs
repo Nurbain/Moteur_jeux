@@ -33,7 +33,7 @@ public class Menufct : MonoBehaviour {
 
 	public void start()
 	{
-		SceneManager.LoadScene ("Game");
+		SceneManager.LoadScene ("Niveau1");
 	}
 
 	public void quitter()
