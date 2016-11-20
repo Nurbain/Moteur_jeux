@@ -6,15 +6,11 @@ public class ChangeTime : MonoBehaviour {
 	public GameObject _Futur;
 	public GameObject _Filter;
 	int i=0;
-	static bool isPast;
+	static bool isPast=true;
 	bool Verif=true;
 
 	// Use this for initialization
 	void Start () {
-		_Past.SetActive (true);
-		_Futur.SetActive (false);
-		_Filter.SetActive (true);
-		isPast = true;
 	}
 	
 	// Update is called once per frame
