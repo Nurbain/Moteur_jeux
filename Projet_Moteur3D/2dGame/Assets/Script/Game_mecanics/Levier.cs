@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 //By Nathan URBAIN
 //Script pour lier un Levier et un objet à evenement 
-//usage : Initialiser le levier dans une rotation de 9°
-public class levier : MonoBehaviour {
+//usage : Initialiser le levier dans une rotation de 18° ,init -12
+public class Levier : MonoBehaviour {
 
 
 	bool canactive = false;
 	private int compteur = 0;
-
+	public GameObject _Objetlie;
 
 	// Use this for initialization
 	void Start () {
@@ -21,11 +22,13 @@ public class levier : MonoBehaviour {
 		if (canactive) {
 			if (Input.GetButtonUp ("Action")) {
 				if (compteur % 2 == 0) {
-					transform.Rotate (0, 0, -18);
+					transform.Rotate (0, 0, -36);
+					_Objetlie.SendMessage ("activation");
 					compteur++;
 
 				} else {
-					transform.Rotate (0, 0, 18);
+					transform.Rotate (0, 0, 36);
+					_Objetlie.SendMessage ("desactivation");
 					compteur++;
 				}
 			}

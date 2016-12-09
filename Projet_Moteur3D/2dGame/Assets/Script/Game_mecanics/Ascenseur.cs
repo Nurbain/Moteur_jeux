@@ -4,7 +4,7 @@ using System.Collections;
 //By Quentin & Nathan 
 //Système d'ascensseur
 
-public class ascenseur : MonoBehaviour {
+public class Ascenseur : MonoBehaviour {
 
 	private float length;
 	private bool avance = true;
