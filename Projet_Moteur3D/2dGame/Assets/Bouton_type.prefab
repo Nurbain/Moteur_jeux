@@ -24,7 +24,7 @@ GameObject:
   - 114: {fileID: 114000014106005262}
   - 114: {fileID: 114000011435570636}
   m_Layer: 5
-  m_Name: Demarrer
+  m_Name: Bouton_type
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
