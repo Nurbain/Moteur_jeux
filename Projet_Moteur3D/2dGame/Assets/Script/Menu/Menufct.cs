@@ -36,9 +36,9 @@ public class Menufct : MonoBehaviour {
 	}
 
 	//Debut niveau
-	public void start()
+	public void Load()
 	{
-		SceneManager.LoadScene ("Niveau1");
+		SceneManager.LoadScene ("ChoixNiveau");
 	}
 
 	//Application quit
@@ -47,10 +47,17 @@ public class Menufct : MonoBehaviour {
 		Application.Quit();
 	}
 
-	//Retour fonction
-	public void retour()
+	//Retour fonction credit 
+	public void retourc()
 	{
 		ccredit.SetActive(false);
+		cmenu.SetActive(true);
+	}
+
+	//Retour fonction
+	public void retouro()
+	{
+		coption.SetActive(false);
 		cmenu.SetActive(true);
 	}
 }
