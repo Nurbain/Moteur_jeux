@@ -5,8 +5,6 @@ using AssemblyCSharp;
 using UnityEngine.UI;
 using System.Linq;
 
-//Modif by Quentin WENDLING
-
 public class DialogBubble : MonoBehaviour {
 
 	Ray ray;
@@ -158,7 +156,7 @@ public class DialogBubble : MonoBehaviour {
 		}
 	}
 
-
+	//Quentin WENDLING
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player" && wait) {
 			canTalk = true;

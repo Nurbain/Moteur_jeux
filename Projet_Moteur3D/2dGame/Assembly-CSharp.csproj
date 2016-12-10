@@ -49,7 +49,6 @@
      <Compile Include="Assets\Caractere (a trier)\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Caractere (a trier)\2D\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Caractere (a trier)\2D\Scripts\PlatformerCharacter2D.cs" />
-     <Compile Include="Assets\Caractere (a trier)\2D\Scripts\Restarter.cs" />
      <Compile Include="Assets\Caractere (a trier)\Cameras\Scripts\AbstractTargetFollower.cs" />
      <Compile Include="Assets\Caractere (a trier)\Cameras\Scripts\AutoCam.cs" />
      <Compile Include="Assets\Caractere (a trier)\Cameras\Scripts\FreeLookCam.cs" />
@@ -172,8 +171,12 @@
      <Compile Include="Assets\Script\Game_mecanics\Ascenseur.cs" />
      <Compile Include="Assets\Script\Game_mecanics\ChangeTime.cs" />
      <Compile Include="Assets\Script\Game_mecanics\CollectObjet.cs" />
-     <Compile Include="Assets\Script\Game_mecanics\Echelle.cs" />
+     <Compile Include="Assets\Script\Game_mecanics\Effondrement.cs" />
+     <Compile Include="Assets\Script\Game_mecanics\Grille.cs" />
      <Compile Include="Assets\Script\Game_mecanics\Levier.cs" />
+     <Compile Include="Assets\Script\Game_mecanics\Restarter.cs" />
+     <Compile Include="Assets\Script\Game_mecanics\Succes.cs" />
+     <Compile Include="Assets\Script\Game_mecanics\echelle.cs" />
      <Compile Include="Assets\Script\Init.cs" />
      <Compile Include="Assets\Script\Menu\Button_highlight.cs" />
      <Compile Include="Assets\Script\Menu\Menufct.cs" />

@@ -481,6 +481,88 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &25193550
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114000013375814368, guid: b2b35ffbf557e324e9e96be1d01146ca,
+        type: 2}
+      propertyPath: vBubble.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011434109140, guid: b2b35ffbf557e324e9e96be1d01146ca, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -130.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011434109140, guid: b2b35ffbf557e324e9e96be1d01146ca, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -9.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011434109140, guid: b2b35ffbf557e324e9e96be1d01146ca, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011434109140, guid: b2b35ffbf557e324e9e96be1d01146ca, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011434109140, guid: b2b35ffbf557e324e9e96be1d01146ca, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011434109140, guid: b2b35ffbf557e324e9e96be1d01146ca, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011434109140, guid: b2b35ffbf557e324e9e96be1d01146ca, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011434109140, guid: b2b35ffbf557e324e9e96be1d01146ca, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013375814368, guid: b2b35ffbf557e324e9e96be1d01146ca,
+        type: 2}
+      propertyPath: vBubble.Array.data[1].vMessage
+      value: 686d6d2e2e2e207768657265206469642049206c6f7374206d7920626f6f747320616761696e3f
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013375814368, guid: b2b35ffbf557e324e9e96be1d01146ca,
+        type: 2}
+      propertyPath: vBubble.Array.data[1].vMessageForm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013375814368, guid: b2b35ffbf557e324e9e96be1d01146ca,
+        type: 2}
+      propertyPath: vBubble.Array.data[1].vBodyColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013375814368, guid: b2b35ffbf557e324e9e96be1d01146ca,
+        type: 2}
+      propertyPath: vBubble.Array.data[1].vBodyColor.g
+      value: 0.9687627
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013375814368, guid: b2b35ffbf557e324e9e96be1d01146ca,
+        type: 2}
+      propertyPath: vBubble.Array.data[1].vBodyColor.b
+      value: 0.83823526
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013375814368, guid: b2b35ffbf557e324e9e96be1d01146ca,
+        type: 2}
+      propertyPath: vBubble.Array.data[1].vClickToCloseBubble
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013375814368, guid: b2b35ffbf557e324e9e96be1d01146ca,
+        type: 2}
+      propertyPath: vBubble.Array.data[0].vMessage
+      value: Test mec
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b2b35ffbf557e324e9e96be1d01146ca, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &47485278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,7 +2607,7 @@ Transform:
   m_Children:
   - {fileID: 1844352763}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &676151261
 GameObject:
   m_ObjectHideFlags: 0
@@ -3291,7 +3373,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a038b284634e29f4aaf058814aa61a6f, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a038b284634e29f4aaf058814aa61a6f, type: 2}
       propertyPath: m_LocalScale.x
@@ -4819,7 +4901,7 @@ Transform:
   - {fileID: 1700182978}
   - {fileID: 1704518658}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &1531855958
 MonoBehaviour:
   m_ObjectHideFlags: 0
