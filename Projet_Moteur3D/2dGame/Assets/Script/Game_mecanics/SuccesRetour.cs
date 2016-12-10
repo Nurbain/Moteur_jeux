@@ -18,6 +18,6 @@ public class SuccesRetour : MonoBehaviour {
 
 	public void RetourLvl()
 	{
-			SceneManager.LoadScene ("ChoixLevel");
+			SceneManager.LoadScene ("ChoixNiveau");
 	}
 }
