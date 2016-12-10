@@ -3,7 +3,7 @@ using System.Collections;
 
 
 //By Nathan URBAIN
-//Script gérent la collect d'objet 
+//Script gérent la fin du jeu
 
 public class Succes : MonoBehaviour {
 
