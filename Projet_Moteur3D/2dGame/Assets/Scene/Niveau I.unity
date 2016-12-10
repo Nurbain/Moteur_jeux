@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3210ffef2915340a400cdfb7705a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasSucces: {fileID: 1270446251}
+  CanvasSucces: {fileID: 0}
 --- !u!61 &21853900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5604,11 +5604,6 @@ Transform:
   - {fileID: 582556151}
   m_Father: {fileID: 0}
   m_RootOrder: 5
---- !u!1 &1270446251 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000012700769584, guid: 4bd4dbdc5d3c12346931e8d5a36a5ba1,
-    type: 2}
-  m_PrefabInternal: {fileID: 689262201}
 --- !u!1 &1275434028
 GameObject:
   m_ObjectHideFlags: 0
