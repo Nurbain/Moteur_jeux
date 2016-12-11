@@ -1,11 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Grille : MonoBehaviour {
+//By Nathan URBAIn
+
+public class ObjetTranslation : MonoBehaviour {
+
+	public float x;
+	public float y;
+	public float z;
 
 	// Use this for initialization
 	void Start () {
-		
+	
 	}
 	
 	// Update is called once per frame
@@ -15,11 +21,12 @@ public class Grille : MonoBehaviour {
 
 	public void activation()
 	{
-		transform.Translate(0, -4, 0);
+		transform.Translate(x,y,z);
 	}
 
 	public void desactivation()
 	{
-		transform.Translate(0, 4, 0);
+		transform.Translate(-x, -y, -z);
 	}
+
 }
