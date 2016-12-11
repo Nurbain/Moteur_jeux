@@ -13,8 +13,8 @@ public class InventaireElem : MonoBehaviour {
 	void Update () {
 	}
 
-	void OnTriggerEnter(){
-		inv.addElem (this);
+	void OnTriggerEnter2D(){
+		inv.addElem (gameObject);
 		gameObject.SetActive (false);
 	}
 }

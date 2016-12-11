@@ -6,16 +6,16 @@ using UnityEngine.UI;
 //WENDLING Quentin
 public class Inventaire : MonoBehaviour {
 	int _Size=5;
-	InventaireElem[] TabElem;
+	GameObject[] TabElem;
 	int nbelem=0;
 	public Sprite defo;
 	// Use this for initialization
 	void Start () {
-		TabElem = new InventaireElem[_Size];
+		TabElem = new GameObject[_Size];
 		UpdateTab ();
 	}
 
-	public void addElem(InventaireElem i){
+	public void addElem(GameObject i){
 		if (nbelem < _Size) {
 			TabElem [nbelem] = i;
 			nbelem++;
@@ -23,7 +23,7 @@ public class Inventaire : MonoBehaviour {
 		}
 	}
 
-	public bool rechercheAndDel(InventaireElem elem){
+	public bool rechercheAndDel(GameObject elem){
 		int i;
 		for (i = 0; i < nbelem; i++) {
 			if (TabElem [i] == elem) {
@@ -46,7 +46,7 @@ public class Inventaire : MonoBehaviour {
 	void UpdateTab(){
 		int i;
 		for (i = 0; i < nbelem; i++) {
-			GameObject.Find ("Obj" + i).GetComponent<Image>().sprite = TabElem[i].GetComponent<Image>().sprite;
+			GameObject.Find ("Obj" + i).GetComponent<Image>().sprite = TabElem[i].GetComponent<SpriteRenderer>().sprite;
 		}
 		for (; i < _Size; i++) {
 			GameObject.Find ("Obj" + i).GetComponent<Image>().sprite = defo;
