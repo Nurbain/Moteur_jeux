@@ -9,10 +9,12 @@ public class Inventaire : MonoBehaviour {
 	GameObject[] TabElem;
 	int nbelem=0;
 	public Sprite defo;
+	bool IsActive=true;
 	// Use this for initialization
 	void Start () {
 		TabElem = new GameObject[_Size];
 		UpdateTab ();
+		gameObject.GetComponent<CanvasGroup>().alpha = 0;
 	}
 
 	public void addElem(GameObject i){
@@ -55,6 +57,13 @@ public class Inventaire : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+		if(Input.GetKeyDown(KeyCode.I)) {
+			print ("press I");
+			if(IsActive)
+				gameObject.GetComponent<CanvasGroup>().alpha = 0;
+			else
+				gameObject.GetComponent<CanvasGroup>().alpha = 1;
+			IsActive = !IsActive;
+		}
 	}
 }
