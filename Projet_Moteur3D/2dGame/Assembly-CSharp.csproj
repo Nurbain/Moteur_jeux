@@ -176,11 +176,16 @@
      <Compile Include="Assets\Script\Game_mecanics\Levier.cs" />
      <Compile Include="Assets\Script\Game_mecanics\Restarter.cs" />
      <Compile Include="Assets\Script\Game_mecanics\Succes.cs" />
+     <Compile Include="Assets\Script\Game_mecanics\SuccesRetour.cs" />
      <Compile Include="Assets\Script\Game_mecanics\echelle.cs" />
      <Compile Include="Assets\Script\Init.cs" />
      <Compile Include="Assets\Script\Menu\Button_highlight.cs" />
      <Compile Include="Assets\Script\Menu\Menufct.cs" />
      <Compile Include="Assets\Script\Menu\PauseMenu.cs" />
+     <Compile Include="Assets\Script\Niveau\Niveau1.cs" />
+     <Compile Include="Assets\Script\Niveau\Niveau2.cs" />
+     <Compile Include="Assets\Script\Niveau\Retour.cs" />
+     <Compile Include="Assets\Script\Niveau\Tutorial.cs" />
      <None Include="Assets\Caractere (a trier)\Effects\Projectors\ProjectorGuidelines.txt" />
      <None Include="Assets\Caractere (a trier)\Effects\GlassRefraction (Pro Only)\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Caractere (a trier)\Effects\ImageEffects (Pro Only)\Shaders\_BloomAndFlares\BlendOneOne.shader" />
