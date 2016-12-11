@@ -8,15 +8,23 @@ public class PlateformFall : MonoBehaviour {
 	private Rigidbody2D rb2d;
 	public float delay;
 
+	public float reAppDelay = 4.0f;
+
+	public Vector3 vect;
+
+
+
 	// Use this for initialization
 	void Start () {
+		vect = gameObject.transform.position;
 		rb2d = GetComponent<Rigidbody2D>();
 	}
 
 	public void OnCollisionEnter2D(Collision2D col) //le joueur touche la plateforme
 	{
 		if(col.collider.CompareTag("Player")){
-				StartCoroutine(Fall());
+			StartCoroutine(Fall());
+			StartCoroutine (reApp ());
 		}
 	}
 	
@@ -25,5 +33,12 @@ public class PlateformFall : MonoBehaviour {
 		rb2d.isKinematic = false; //on fait tomber
 		yield return 0;
 		
+	}
+
+	IEnumerator reApp(){
+		yield return new WaitForSeconds(reAppDelay);
+		rb2d.isKinematic = true;
+		transform.position = vect;
+		yield return 0;
 	}
 }
