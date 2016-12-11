@@ -4,7 +4,7 @@ using System.Collections;
 //By Louis LAMBRECHT
 
 public class Spyke : MonoBehaviour {
-
+	/*
 	private Player p;
 
 	// Use this for initialization
@@ -26,6 +26,6 @@ public class Spyke : MonoBehaviour {
 		}
 		
 		
-	}
+	}*/
 	
 }

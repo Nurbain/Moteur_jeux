@@ -174,7 +174,10 @@
      <Compile Include="Assets\Script\Game_mecanics\Effondrement.cs" />
      <Compile Include="Assets\Script\Game_mecanics\Grille.cs" />
      <Compile Include="Assets\Script\Game_mecanics\Levier.cs" />
+     <Compile Include="Assets\Script\Game_mecanics\PlateformFall.cs" />
+     <Compile Include="Assets\Script\Game_mecanics\Player.cs" />
      <Compile Include="Assets\Script\Game_mecanics\Restarter.cs" />
+     <Compile Include="Assets\Script\Game_mecanics\Spyke.cs" />
      <Compile Include="Assets\Script\Game_mecanics\Succes.cs" />
      <Compile Include="Assets\Script\Game_mecanics\SuccesRetour.cs" />
      <Compile Include="Assets\Script\Game_mecanics\echelle.cs" />

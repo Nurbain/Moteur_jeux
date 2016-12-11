@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3210ffef2915340a400cdfb7705a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasSucces: {fileID: 0}
+  CanvasSucces: {fileID: 2094300021}
 --- !u!61 &21853900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9539,6 +9539,11 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &2094300021 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012700769584, guid: 4bd4dbdc5d3c12346931e8d5a36a5ba1,
+    type: 2}
+  m_PrefabInternal: {fileID: 689262201}
 --- !u!1 &2136050764
 GameObject:
   m_ObjectHideFlags: 0

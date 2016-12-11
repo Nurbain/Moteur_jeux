@@ -4,7 +4,7 @@ using System.Collections;
 //By Louis LAMBRECHT
 
 public class Player : MonoBehaviour {
-
+	/*
 	public int currHealth;
 	public int maxHealth = 5;
 	
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour {
 		currHealth -= n;
 	}
 	
-	public IEnumerator Knockback float knockD, float knockPwr, Vector3 direction){
+	public IEnumerator Knockback (float knockD, float knockPwr, Vector3 direction){
 		float timer = 0;
 		while(knockD > timer){
 			timer += Time.deltaTime;
@@ -44,6 +44,6 @@ public class Player : MonoBehaviour {
 		
 		yield return 0;
 		
-	}
+	}*/
 	
 }
