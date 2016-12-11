@@ -12,9 +12,9 @@ public class InventaireElem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	}
-
+	//On ajoute l'objet dans l'inventaire quant le joueur marche dessus
 	void OnTriggerEnter2D(){
-		inv.addElem (gameObject);
-		gameObject.SetActive (false);
+		if(inv.addElem (gameObject))
+			gameObject.SetActive (false);
 	}
 }
