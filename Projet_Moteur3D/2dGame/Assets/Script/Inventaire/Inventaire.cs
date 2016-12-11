@@ -17,14 +17,20 @@ public class Inventaire : MonoBehaviour {
 		gameObject.GetComponent<CanvasGroup>().alpha = 0;
 	}
 
-	public void addElem(GameObject i){
+	//Fonction pour ajouter un élément dans l'inventaire return true si l'élément est ajouter false sinon
+	public bool addElem(GameObject i){
+		//On regarde si on à de la place puis on ajoute l'élément
 		if (nbelem < _Size) {
 			TabElem [nbelem] = i;
 			nbelem++;
 			UpdateTab ();
+			return true;
 		}
+		//Si on peut pas on return false
+		return false;
 	}
 
+	//Fonction qui recherche si un objet est dans l'inventaire puis le supprime
 	public bool rechercheAndDel(GameObject elem){
 		int i;
 		for (i = 0; i < nbelem; i++) {
@@ -36,6 +42,7 @@ public class Inventaire : MonoBehaviour {
 		return false;
 	}
 
+	//Fonction qui supprime un element d'indice i
 	void supprElem(int i){
 		int j;
 		for (j = i; j < nbelem - 1; j++) {
@@ -45,11 +52,14 @@ public class Inventaire : MonoBehaviour {
 		UpdateTab();
 	}
 
+	//Fonction qui mets a jour le tableau
 	void UpdateTab(){
 		int i;
+		//Si il y à un objet on affiche son sprite 
 		for (i = 0; i < nbelem; i++) {
 			GameObject.Find ("Obj" + i).GetComponent<Image>().sprite = TabElem[i].GetComponent<SpriteRenderer>().sprite;
 		}
+		//sinon le sprite par defaut
 		for (; i < _Size; i++) {
 			GameObject.Find ("Obj" + i).GetComponent<Image>().sprite = defo;
 		}
