@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//By Nathan URBAIn
+//By Nathan URBAIN
+//Script permetant le mecanisme d'echelle
 
 public class Echelle : MonoBehaviour {
 
-
+	private bool _isin = false;
+	public GameObject perso;
+	private Rigidbody2D gravity;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,17 +16,32 @@ public class Echelle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(_isin == true) {
+			gravity = perso.GetComponent<Rigidbody2D>();
+			gravity.gravityScale = 0;			
+			if (Input.GetKey ("up")) {
+				perso.transform.position += Vector3.up * (Time.deltaTime * 6);
+			}
+
+			if (Input.GetKey ("down")) {
+				perso.transform.position -= Vector3.up * (Time.deltaTime * 6);
+			}
+		}
 	}
 
-	void OnTriggerStay2D(Collider2D other)
+	void OnTriggerEnter2D(Collider2D player)
 	{
-		if(Input.GetKey("up")) {
-			other.gameObject.transform.position += Vector3.up * (Time.deltaTime*4);
+		if (player.tag == "Player") {
+			_isin = true;
 		}
+	}
 
-		if(Input.GetKey("down")) {
-			other.gameObject.transform.position -= Vector3.up * (Time.deltaTime*4);
-		}
+	void OnTriggerExit2D(Collider2D player)
+	{
+		_isin = false;
+		print ("yoyo");
+		gravity = perso.GetComponent<Rigidbody2D>();
+		gravity.gravityScale = 3;		
 	}
 
 }
