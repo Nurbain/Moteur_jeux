@@ -3,7 +3,7 @@ using System.Collections;
 
 //By Nathan URBAIn
 
-public class echelle : MonoBehaviour {
+public class Echelle : MonoBehaviour {
 
 
 	// Use this for initialization
