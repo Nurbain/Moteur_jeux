@@ -165,6 +165,7 @@
      <Compile Include="Assets\Caractere (a trier)\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Caractere (a trier)\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Caractere (a trier)\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\Script\CheatCode.cs" />
      <Compile Include="Assets\Script\Dialogue\Appear.cs" />
      <Compile Include="Assets\Script\Dialogue\DialogBubble.cs" />
      <Compile Include="Assets\Script\Dialogue\PixelBubble.cs" />
