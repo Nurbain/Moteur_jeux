@@ -162,6 +162,8 @@ GameObject:
   - 4: {fileID: 29561033}
   - 212: {fileID: 29561035}
   - 61: {fileID: 29561034}
+  - 50: {fileID: 29561037}
+  - 114: {fileID: 29561036}
   m_Layer: 0
   m_Name: big-floating-rock (2)
   m_TagString: Untagged
@@ -229,6 +231,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &29561036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29561032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f942ef3739634e8857cfd02032602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  reAppDelay: 4
+  vect: {x: 0, y: 0, z: 0}
+--- !u!50 &29561037
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29561032}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &31026300 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013556941804, guid: 37c17ef1b7e05f04eab8d3ebdf35b0a4,
@@ -1948,6 +1981,8 @@ GameObject:
   - 4: {fileID: 366049017}
   - 212: {fileID: 366049019}
   - 61: {fileID: 366049018}
+  - 50: {fileID: 366049021}
+  - 114: {fileID: 366049020}
   m_Layer: 0
   m_Name: floating-rock-2 (7)
   m_TagString: Untagged
@@ -2015,6 +2050,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &366049020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366049016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f942ef3739634e8857cfd02032602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  reAppDelay: 4
+  vect: {x: 0, y: 0, z: 0}
+--- !u!50 &366049021
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366049016}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &382130171
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,6 +3497,8 @@ GameObject:
   - 4: {fileID: 597060505}
   - 212: {fileID: 597060507}
   - 61: {fileID: 597060506}
+  - 50: {fileID: 597060509}
+  - 114: {fileID: 597060508}
   m_Layer: 0
   m_Name: floating-rock-1 (4)
   m_TagString: Untagged
@@ -3498,6 +3566,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &597060508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597060504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f942ef3739634e8857cfd02032602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  reAppDelay: 4
+  vect: {x: 0, y: 0, z: 0}
+--- !u!50 &597060509
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597060504}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &600157647
 GameObject:
   m_ObjectHideFlags: 0
@@ -4033,6 +4132,8 @@ GameObject:
   - 4: {fileID: 668104972}
   - 212: {fileID: 668104974}
   - 61: {fileID: 668104973}
+  - 50: {fileID: 668104976}
+  - 114: {fileID: 668104975}
   m_Layer: 0
   m_Name: floating-rock-2 (4)
   m_TagString: Untagged
@@ -4100,6 +4201,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &668104975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668104971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f942ef3739634e8857cfd02032602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  reAppDelay: 4
+  vect: {x: 0, y: 0, z: 0}
+--- !u!50 &668104976
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668104971}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &696837361
 GameObject:
   m_ObjectHideFlags: 0
@@ -5556,6 +5688,8 @@ GameObject:
   - 4: {fileID: 932724241}
   - 212: {fileID: 932724243}
   - 61: {fileID: 932724242}
+  - 50: {fileID: 932724245}
+  - 114: {fileID: 932724244}
   m_Layer: 0
   m_Name: floating-rock-2 (5)
   m_TagString: Untagged
@@ -5623,6 +5757,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &932724244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 932724240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f942ef3739634e8857cfd02032602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  reAppDelay: 4
+  vect: {x: 0, y: 0, z: 0}
+--- !u!50 &932724245
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 932724240}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &939896996
 GameObject:
   m_ObjectHideFlags: 0
@@ -5633,6 +5798,8 @@ GameObject:
   - 4: {fileID: 939896997}
   - 212: {fileID: 939896999}
   - 61: {fileID: 939896998}
+  - 50: {fileID: 939897001}
+  - 114: {fileID: 939897000}
   m_Layer: 0
   m_Name: floating-rock-1 (1)
   m_TagString: Untagged
@@ -5700,6 +5867,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &939897000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939896996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f942ef3739634e8857cfd02032602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  reAppDelay: 4
+  vect: {x: 0, y: 0, z: 0}
+--- !u!50 &939897001
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939896996}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &983245192 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011434109140, guid: f3ca00369eefe9844b14b9e035aecdff,
@@ -10248,6 +10446,8 @@ GameObject:
   - 4: {fileID: 2037847745}
   - 212: {fileID: 2037847747}
   - 61: {fileID: 2037847746}
+  - 50: {fileID: 2037847749}
+  - 114: {fileID: 2037847748}
   m_Layer: 0
   m_Name: floating-rock-2 (3)
   m_TagString: Untagged
@@ -10315,6 +10515,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &2037847748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037847744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f942ef3739634e8857cfd02032602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  reAppDelay: 4
+  vect: {x: 0, y: 0, z: 0}
+--- !u!50 &2037847749
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037847744}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2059853115
 GameObject:
   m_ObjectHideFlags: 0
@@ -10475,6 +10706,8 @@ GameObject:
   - 4: {fileID: 2065472795}
   - 212: {fileID: 2065472797}
   - 61: {fileID: 2065472796}
+  - 50: {fileID: 2065472799}
+  - 114: {fileID: 2065472798}
   m_Layer: 0
   m_Name: floating-rock-1 (2)
   m_TagString: Untagged
@@ -10542,6 +10775,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &2065472798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2065472794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f942ef3739634e8857cfd02032602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  reAppDelay: 4
+  vect: {x: 0, y: 0, z: 0}
+--- !u!50 &2065472799
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2065472794}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2077225907
 GameObject:
   m_ObjectHideFlags: 0
