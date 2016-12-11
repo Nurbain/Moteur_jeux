@@ -21,8 +21,8 @@ public class CheatCode : MonoBehaviour {
 	void Update () {
 
 		if (isCheated) {
-			Time.timeScale = 0f;
 			CheatPanel.SetActive (true);
+			Time.timeScale = 0f;
 		} else {
 			Time.timeScale = 1f;
 			CheatPanel.SetActive (false);
@@ -49,15 +49,15 @@ public class CheatCode : MonoBehaviour {
 
 	public void no()
 	{
-		isCheated = !isCheated;
-		CheatPanel.SetActive(false);
+		CheatPanel.SetActive (false);
+		isCheated = false;
 		_ison = false;
 	}
 		
 	public void yes()
 	{
-		isCheated = !isCheated;
-		CheatPanel.SetActive(false);
+		CheatPanel.SetActive (false);
+		isCheated = false;
 		_ison = true;
 	}
 }

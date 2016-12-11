@@ -24,7 +24,7 @@ GameObject:
   - 50: {fileID: 50000013465810396}
   - 114: {fileID: 114000010257682570}
   m_Layer: 0
-  m_Name: big-floating-rock1 (3)
+  m_Name: fallingrock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
