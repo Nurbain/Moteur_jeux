@@ -9,7 +9,7 @@ public class Inventaire : MonoBehaviour {
 	GameObject[] TabElem;
 	int nbelem=0;
 	public Sprite defo;
-	bool IsActive=true;
+	bool IsActive=false;
 	// Use this for initialization
 	void Start () {
 		TabElem = new GameObject[_Size];
