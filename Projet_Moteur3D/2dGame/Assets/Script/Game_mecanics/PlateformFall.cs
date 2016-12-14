@@ -6,9 +6,10 @@ using System.Collections;
 public class PlateformFall : MonoBehaviour {
 
 	private Rigidbody2D rb2d;
-	public float delay;
+	private float delay = 0.7f;
+	private float reAppDelay = 4.0f;
 
-	public float reAppDelay = 4.0f;
+	private bool falling = false;
 
 	public Vector3 vect;
 
@@ -22,13 +23,16 @@ public class PlateformFall : MonoBehaviour {
 
 	public void OnCollisionEnter2D(Collision2D col) //le joueur touche la plateforme
 	{
-		if(col.collider.CompareTag("Player")){
-			StartCoroutine(Fall());
-			StartCoroutine (reApp ());
+		if (falling == false){
+			if (col.collider.CompareTag ("Player")) {
+				StartCoroutine (Fall ());
+				StartCoroutine (reApp ());
+			}
 		}
 	}
 	
 	IEnumerator Fall(){
+		falling = true;
 		yield return new WaitForSeconds(delay); //on attend le delay
 		rb2d.isKinematic = false; //on fait tomber
 		yield return 0;
@@ -39,6 +43,8 @@ public class PlateformFall : MonoBehaviour {
 		yield return new WaitForSeconds(reAppDelay);
 		rb2d.isKinematic = true;
 		transform.position = vect;
+		transform.rotation = Quaternion.Euler(0, 0, 0);
+		falling = false;
 		yield return 0;
 	}
 }
