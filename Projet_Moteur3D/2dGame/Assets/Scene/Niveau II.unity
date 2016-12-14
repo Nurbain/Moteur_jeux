@@ -6355,7 +6355,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 403732, guid: 0d13baa786e3c9941b157ce7345d4e55, type: 2}
       propertyPath: m_RootOrder
-      value: 81
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 21252600, guid: 0d13baa786e3c9941b157ce7345d4e55, type: 2}
       propertyPath: m_FlipX
@@ -6363,11 +6363,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11499288, guid: 0d13baa786e3c9941b157ce7345d4e55, type: 2}
       propertyPath: vBubble.Array.data[0].vMessage
-      value: 'Bonjour il me faut 3 planches pour ce pont '
+      value: Bonjour, j'aimerais construire un pont, mais il me manque trois planches
+        !
       objectReference: {fileID: 0}
     - target: {fileID: 11499288, guid: 0d13baa786e3c9941b157ce7345d4e55, type: 2}
       propertyPath: vBubble.Array.data[1].vMessage
-      value: Peux tu me les fournir?
+      value: Peux tu me les fournir ?
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 13688838, guid: 0d13baa786e3c9941b157ce7345d4e55, type: 2}
@@ -6900,7 +6901,7 @@ Prefab:
     - target: {fileID: 114000013375814368, guid: f3ca00369eefe9844b14b9e035aecdff,
         type: 2}
       propertyPath: vBubble.Array.data[0].vMessage
-      value: Peux tu tester mon amortisseur de chut ? Je suis en pleine exerimentation
+      value: Peux tu tester mon amortisseur de chute ? Je suis en pleine experimentation
         !
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -15028,7 +15029,7 @@ Prefab:
     - target: {fileID: 114000013375814368, guid: f3ca00369eefe9844b14b9e035aecdff,
         type: 2}
       propertyPath: vBubble.Array.data[1].vMessage
-      value: "Bon certain y sont quand m\xEAme pass\xE9..."
+      value: "Bon certain y sont quand m\xEAme pass\xE9s..."
       objectReference: {fileID: 0}
     - target: {fileID: 114000013375814368, guid: f3ca00369eefe9844b14b9e035aecdff,
         type: 2}

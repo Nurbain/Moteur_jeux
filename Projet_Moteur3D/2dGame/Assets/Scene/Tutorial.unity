@@ -853,7 +853,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 76725656}
-  m_Text: 'Pour intergair avec ce levier , "E" '
+  m_Text: 'Pour intergair avec ce levier, "E" '
   m_OffsetZ: 0
   m_CharacterSize: 0.3
   m_LineSpacing: 1
@@ -9100,7 +9100,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1200405905}
-  m_Text: Pour Interagir avec les pnj utilisez "E"
+  m_Text: Pour Interagir avec les PNJ utilisez "E"
   m_OffsetZ: 0
   m_CharacterSize: 0.3
   m_LineSpacing: 1
@@ -11390,7 +11390,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1434191170}
-  m_Text: Un objet pour votre collection ! Pour la voir "I"
+  m_Text: Un objet pour votre collection ! Pour le voir, "I"
   m_OffsetZ: 0
   m_CharacterSize: 0.3
   m_LineSpacing: 1
@@ -14648,13 +14648,13 @@ Prefab:
     - target: {fileID: 114000013375814368, guid: f3ca00369eefe9844b14b9e035aecdff,
         type: 2}
       propertyPath: vBubble.Array.data[0].vMessage
-      value: "J'ai construit ce pont il y a plusieur ann\xE9e mais au final j'ai juste
-        trouv\xE9 des cailloux ici ..."
+      value: "J'ai construit ce pont il y a plusieurs ann\xE9es mais au final je n'ai
+        juste trouv\xE9 des cailloux ici ..."
       objectReference: {fileID: 0}
     - target: {fileID: 114000013375814368, guid: f3ca00369eefe9844b14b9e035aecdff,
         type: 2}
       propertyPath: vBubble.Array.data[1].vMessage
-      value: "J'ai pas d\xE9ja vus ce type ?"
+      value: "J'ai pas d\xE9j\xE0 vu ce type ?"
       objectReference: {fileID: 0}
     - target: {fileID: 212000010064630604, guid: f3ca00369eefe9844b14b9e035aecdff,
         type: 2}
@@ -16648,7 +16648,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2014972439}
-  m_Text: 'Un cheat mode ? Mais biensure ! Appuyez sur C '
+  m_Text: "Un cheat mode ? Mais bien s\xFBr ! Appuyez sur C "
   m_OffsetZ: 0
   m_CharacterSize: 0.3
   m_LineSpacing: 1
