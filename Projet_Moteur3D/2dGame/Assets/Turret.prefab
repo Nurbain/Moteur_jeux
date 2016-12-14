@@ -131,7 +131,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013732114328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00054, y: 0.00018, z: 0}
+  m_LocalPosition: {x: -0.0005, y: 0.00018, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -144,7 +144,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013359483206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.575861, y: -53.38, z: 0}
+  m_LocalPosition: {x: -28.204775, y: -53.38948, z: 0}
   m_LocalScale: {x: 3312.4978, y: 2762.4949, z: 5000}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -187,7 +187,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010569586280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00047, y: 0.00012, z: 0}
+  m_LocalPosition: {x: 0.00041, y: 0.00012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -314,8 +314,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 0
   wakeRange: 8
-  shootInterval: 0.2
-  bulletSpeed: 10
+  shootInterval: 0.8
+  bulletSpeed: 5
   bulletTimer: 0
   awake: 0
   lookingRight: 1
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretAI: {fileID: 0}
-  isLeft: 0
+  isLeft: 1
 --- !u!212 &212000010788566432
 SpriteRenderer:
   m_ObjectHideFlags: 1
