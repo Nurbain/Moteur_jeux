@@ -11,6 +11,7 @@ public class PlateformFall : MonoBehaviour {
 
 	private bool falling = false;
 
+	private Quaternion rotat;
 	public Vector3 vect;
 
 
@@ -18,6 +19,7 @@ public class PlateformFall : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		vect = gameObject.transform.position;
+		rotat = gameObject.transform.rotation;
 		rb2d = GetComponent<Rigidbody2D>();
 	}
 
@@ -43,7 +45,7 @@ public class PlateformFall : MonoBehaviour {
 		yield return new WaitForSeconds(reAppDelay);
 		rb2d.isKinematic = true;
 		transform.position = vect;
-		transform.rotation = Quaternion.Euler(0, 0, 0);
+		transform.rotation = rotat;
 		falling = false;
 		yield return 0;
 	}
