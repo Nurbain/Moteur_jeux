@@ -39,6 +39,14 @@ public class TurretAI : MonoBehaviour {
 
 		RangeCheck ();
 
+		if (target.transform.position.x > transform.position.x) {
+			lookingRight = true;
+		}
+
+		if (target.transform.position.x < transform.position.x) {
+			lookingRight = false;
+		}
+
 	}
 
 	void RangeCheck(){
@@ -53,6 +61,35 @@ public class TurretAI : MonoBehaviour {
 		}
 
 	}
+
+
+	public void Attack(bool attackingRight){
+		bulletTimer += Time.deltaTime;
+
+		if (bulletTimer >= shootInterval) {
+			Vector2 direction = target.transform.position - transform.position;
+			direction.Normalize ();
+
+			if (!attackingRight) {
+				GameObject bulletClone;
+				bulletClone = Instantiate (bullet, shootPointLeft.transform.position, shootPointLeft.transform.rotation) as GameObject;
+				bulletClone.GetComponent<Rigidbody2D> ().velocity = direction * bulletSpeed;
+
+				bulletTimer = 0;
+			} else {
+				GameObject bulletClone;
+				bulletClone = Instantiate (bullet, shootPointRight.transform.position, shootPointRight.transform.rotation) as GameObject;
+				bulletClone.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
+
+				bulletTimer = 0;
+			}
+
+		}
+
+	}
+
+
+
 
 
 
