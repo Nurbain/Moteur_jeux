@@ -15347,6 +15347,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1242846736}
   m_RootOrder: 82
+--- !u!1 &2049876832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000012576194120, guid: 0aefa46a260ccbc48b8ec3a91d87ffb6,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2049876834}
+  - 114: {fileID: 2049876833}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2049876833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2049876832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c63d3120a70c9243924196aefa74a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tps:
+    serializedVersion: 2
+    x: 10
+    y: 10
+    width: 0
+    height: 0
+  skin: {fileID: 11400000, guid: fa7e2053938f9284493e50ae458916e8, type: 2}
+--- !u!4 &2049876834
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4000010261157480, guid: 0aefa46a260ccbc48b8ec3a91d87ffb6,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2049876832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -140.94955, y: -7.6872315, z: -6.4570312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
 --- !u!1 &2078347163 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000010787830294, guid: 4bd4dbdc5d3c12346931e8d5a36a5ba1,
