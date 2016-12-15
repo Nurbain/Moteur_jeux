@@ -100,6 +100,7 @@ GameObject:
   - 4: {fileID: 7461201}
   - 212: {fileID: 7461200}
   - 114: {fileID: 7461199}
+  - 61: {fileID: 7461202}
   m_Layer: 0
   m_Name: Ascenseur
   m_TagString: Untagged
@@ -167,6 +168,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
+--- !u!61 &7461202
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7461198}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 3.48, y: 2.22}
 --- !u!1 &45808086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,6 +1248,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &299403860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1105557688}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 299403861}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &299403861
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1105557688}
+  m_GameObject: {fileID: 299403860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 571996504}
+  m_RootOrder: 7
 --- !u!1 &332150885
 GameObject:
   m_ObjectHideFlags: 0
@@ -6742,6 +6785,10 @@ Prefab:
       propertyPath: vBubble.Array.data[1].vMessage
       value: 'Je te la donne volontier ! '
       objectReference: {fileID: 0}
+    - target: {fileID: 11499288, guid: 0d13baa786e3c9941b157ce7345d4e55, type: 2}
+      propertyPath: vBubble.Array.data[1].vMessageForm
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 13688838, guid: 0d13baa786e3c9941b157ce7345d4e55, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0d13baa786e3c9941b157ce7345d4e55, type: 2}
@@ -9913,7 +9960,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2115899029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fadd5a0007acd524bb4fa50f9f093d7e, type: 3}
+  m_Script: {fileID: 11500000, guid: 96d08c160b560464e89dd06c4cce0c53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   perso: {fileID: 2047174302}
