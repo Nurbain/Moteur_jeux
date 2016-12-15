@@ -309,17 +309,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013359483206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34154dcfee9478044baea4016f01c9eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d1de14d99bbb0f4198b6f84272e6abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 0
-  wakeRange: 8
-  shootInterval: 0.8
-  bulletSpeed: 5
+  wakeRange: 0
+  shootInterval: 0
+  bulletSpeed: 100
   bulletTimer: 0
   awake: 0
   lookingRight: 1
-  bullet: {fileID: 1000012992808796, guid: 6e4ba70a54de3aa429453eb261a3624e, type: 2}
+  bullet: {fileID: 1000012992808796, guid: a96fdc5388ad1e24e97187d10ac66b03, type: 2}
   target: {fileID: 0}
   anim: {fileID: 0}
   shootPointLeft: {fileID: 4000013096747588}
