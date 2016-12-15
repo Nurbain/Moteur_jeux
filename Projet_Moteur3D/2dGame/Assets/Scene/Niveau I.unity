@@ -8081,11 +8081,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011434109140, guid: f3ca00369eefe9844b14b9e035aecdff, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -143.37
+      value: -143.26
       objectReference: {fileID: 0}
     - target: {fileID: 4000011434109140, guid: f3ca00369eefe9844b14b9e035aecdff, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -24.65
+      value: -24.69
       objectReference: {fileID: 0}
     - target: {fileID: 4000011434109140, guid: f3ca00369eefe9844b14b9e035aecdff, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8169,14 +8169,23 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300010, guid: 13fe25c4a464cf649a0d7f84adf9edcb,
+      objectReference: {fileID: 21300000, guid: 4eac310260fbdf049a9a6ec260b1fabb,
         type: 3}
     - target: {fileID: 114000013375814368, guid: f3ca00369eefe9844b14b9e035aecdff,
         type: 2}
       propertyPath: vBubble.Array.data[0].vClickToCloseBubble
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4000011434109140, guid: f3ca00369eefe9844b14b9e035aecdff, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.17517874
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011434109140, guid: f3ca00369eefe9844b14b9e035aecdff, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.24649672
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 61000013108850862, guid: f3ca00369eefe9844b14b9e035aecdff, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f3ca00369eefe9844b14b9e035aecdff, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1108404376
@@ -11141,6 +11150,25 @@ MonoBehaviour:
   reserve:
   - {fileID: 514174830}
   inv: {fileID: 1477692594}
+--- !u!1 &1603309142 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012590682750, guid: f3ca00369eefe9844b14b9e035aecdff,
+    type: 2}
+  m_PrefabInternal: {fileID: 1103303028}
+--- !u!61 &1603309143
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1603309142}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8}
 --- !u!1 &1611812097
 GameObject:
   m_ObjectHideFlags: 0
@@ -14817,7 +14845,7 @@ MonoBehaviour:
     y: 10
     width: 0
     height: 0
-  skin: {fileID: 11400000, guid: fa7e2053938f9284493e50ae458916e8, type: 2}
+  skin: {fileID: 11400000, guid: eca8aac239d17eb47a35c50da7d35496, type: 2}
 --- !u!4 &2049876834
 Transform:
   m_ObjectHideFlags: 0
