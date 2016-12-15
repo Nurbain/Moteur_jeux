@@ -7,7 +7,10 @@ using System.Collections;
 
 public class Succes : MonoBehaviour {
 
+
+	float tps;
 	public GameObject CanvasSucces;
+
 	// Use this for initialization
 	void Start () {
 		CanvasSucces.SetActive(false);
@@ -19,8 +22,11 @@ public class Succes : MonoBehaviour {
 
 	public void OnTriggerEnter2D(Collider2D other)
 	{
+		tps =  Timer.temps;
+		print (tps);
 		if (other.tag == "Player") {
-			CanvasSucces.SetActive (true);
+			CanvasSucces.SetActive(true);
 		}
 	}
+
 }
