@@ -8,11 +8,33 @@ using System.Collections;
 public class RepeatSpriteBoundary : MonoBehaviour {
 	SpriteRenderer sprite;
 
+	int pgcd(int a,int b){
+		if (a < b)
+			return pgcd (b, a);
+		int q = a / b;
+		if (a == b * q) {
+			return b;
+		}
+		return pgcd (b, a - b * q);
+	}
+
+	float SizeSprite(float tx,float ty){
+		int k = 1;
+		float s,tmp;
+		while (true) {
+			s = tx / (float)k;
+			tmp = (int)Mathf.Round (ty / s) - ty / s;
+			if (tmp < 0.0001 && tmp > -0.0001) {
+				return s;
+			}
+			k++;
+		}
+	}
+
 	void Awake () {
 
 		sprite = GetComponent<SpriteRenderer>();
 		Vector2 spriteSize = new Vector2(sprite.bounds.size.x / transform.localScale.x, sprite.bounds.size.y / transform.localScale.y);
-
 		// Generate a child prefab of the sprite renderer
 		GameObject childPrefab = new GameObject();
 		SpriteRenderer childSprite = childPrefab.AddComponent<SpriteRenderer>();
@@ -21,18 +43,23 @@ public class RepeatSpriteBoundary : MonoBehaviour {
 
 		// Loop through and spit out repeated tiles
 		GameObject child;
-		/*for (int i = 1, l = (int)Mathf.Round(sprite.bounds.size.y); i < l; i++){
-			child = Instantiate(childPrefab) as GameObject;
-			child.transform.position = transform.position - (new Vector3(0, spriteSize.y, 0) * i);
-			child.transform.parent = transform;
+		int dx, dy;
+		if (transform.localScale.x > transform.localScale.y) {
+			print ("x>y");
+			dx = 4;
+			dy = 2;
+		} else {
+			dy = 5;
+			dx = 4;
 		}
 
-		for (int i = 1, l = (int)Mathf.Round (sprite.bounds.size.y); i < l; i++) {*/
-			for (int j = 1, k = (int)Mathf.Round (sprite.bounds.size.x); j < k; j++) {
+		for (float i = -sprite.bounds.size.y+dy, l = sprite.bounds.size.y; i < l-(dy-1); i++) {
+			for (float j = -sprite.bounds.size.x+dx, k =sprite.bounds.size.x; j < k-(dx-1); j++) {
 				child = Instantiate (childPrefab) as GameObject;
-				child.transform.position = transform.position - (new Vector3 (spriteSize.x * j, 0, 0));
+				child.transform.position = transform.position - (new Vector3 (spriteSize.x * j, spriteSize.y*i, 0));
 				child.transform.parent = transform;
 			}
+		}
 
 
 
