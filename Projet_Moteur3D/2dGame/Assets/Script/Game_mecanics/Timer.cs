@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//By Nathan Urbain
+//By  Nathan Urbain
 
 public class Timer : MonoBehaviour {
 
