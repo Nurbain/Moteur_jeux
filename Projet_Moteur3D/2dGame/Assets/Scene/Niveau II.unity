@@ -532,7 +532,7 @@ MonoBehaviour:
     y: 10
     width: 0
     height: 0
-  skin: {fileID: 0}
+  skin: {fileID: 11400000, guid: eca8aac239d17eb47a35c50da7d35496, type: 2}
 --- !u!4 &62467146
 Transform:
   m_ObjectHideFlags: 0
@@ -14627,11 +14627,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000010781983884, guid: 3e7e9a47a58d5014e93a949885405c8b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 68.7
+      value: -78.95
       objectReference: {fileID: 0}
     - target: {fileID: 4000010781983884, guid: 3e7e9a47a58d5014e93a949885405c8b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -45.8
+      value: -22.37
       objectReference: {fileID: 0}
     - target: {fileID: 4000010781983884, guid: 3e7e9a47a58d5014e93a949885405c8b, type: 2}
       propertyPath: m_LocalPosition.z
