@@ -32,8 +32,6 @@ public class CheatCode : MonoBehaviour {
 			isCheated = !isCheated;
 
 		if (_ison == true) {
-			gravity = perso.GetComponent<Rigidbody2D> ();
-			gravity.gravityScale = 0;
 			if (Input.GetKey ("up")) {
 				perso.transform.position += Vector3.up * (Time.deltaTime * 6);
 			}
@@ -41,9 +39,6 @@ public class CheatCode : MonoBehaviour {
 			if (Input.GetKey ("down")) {
 				perso.transform.position -= Vector3.up * (Time.deltaTime * 6);
 			}
-		} else {
-			gravity = perso.GetComponent<Rigidbody2D> ();
-			gravity.gravityScale = 3;
 		}
 	}
 
@@ -52,6 +47,8 @@ public class CheatCode : MonoBehaviour {
 		CheatPanel.SetActive (false);
 		isCheated = false;
 		_ison = false;
+		gravity = perso.GetComponent<Rigidbody2D> ();
+		gravity.gravityScale = 3;
 	}
 		
 	public void yes()
@@ -59,5 +56,7 @@ public class CheatCode : MonoBehaviour {
 		CheatPanel.SetActive (false);
 		isCheated = false;
 		_ison = true;
+		gravity = perso.GetComponent<Rigidbody2D> ();
+		gravity.gravityScale = 0;
 	}
 }

@@ -16,9 +16,8 @@ public class Echelle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(_isin == true) {
-			gravity = perso.GetComponent<Rigidbody2D>();
-			gravity.gravityScale = 0;			
+		if(_isin) {
+
 			if (Input.GetKey ("up")) {
 				perso.transform.position += Vector3.up * (Time.deltaTime * 6);
 			}
@@ -31,17 +30,21 @@ public class Echelle : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D player)
 	{
-		if (player.tag == "Player") {
+		if (player.tag == "Player" && !_isin) {
 			_isin = true;
+			gravity = perso.GetComponent<Rigidbody2D>();
+			gravity.gravityScale = 0;	
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D player)
 	{
-		_isin = false;
-		print ("yoyo");
-		gravity = perso.GetComponent<Rigidbody2D>();
-		gravity.gravityScale = 3;		
+		if (_isin) {
+			_isin = false;
+			print ("yoyo");
+			gravity = perso.GetComponent<Rigidbody2D> ();
+			gravity.gravityScale = 3;
+		}
 	}
 
 }
