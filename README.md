@@ -6,9 +6,9 @@
 
 ## Style de Jeu 
 
-Le joueur dirige un petit robot devant changer de dimension grâce aux diffétrents portail présent pour continuer à avancer et élucider les petites enigmes.
+Le joueur dirige un petit robot devant changer de dimension grâce aux différents portails présents pour continuer à avancer et élucider les petites enigmes.
 Un jeu de plateforme simpliste ayant tout de même une interraction avec un inventaire.
-Le Jeu comporte un niveau tutorial et 3 niveaux de jeu normaux.
+Le Jeu comporte un niveau d'explication ainsi que 3 niveaux normaux.
 
 
 ##Commandes 
@@ -17,7 +17,7 @@ Le Jeu comporte un niveau tutorial et 3 niveaux de jeu normaux.
  -   I     -> Ouverture de l'inventaire
  -   C     -> Activation du CheatMode
  
-##Autheurs
+##Auteurs
  - Nathan URBAIN
  - Quentin WENDLING 
  - Louis LAMBRECHT
