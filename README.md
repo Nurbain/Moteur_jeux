@@ -2,7 +2,6 @@
 
 ## 1er Jeu réalisé sur Unity3D 
 
----------------------------------------
 
 ### Style de Jeu 
 
